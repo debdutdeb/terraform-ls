@@ -66,9 +66,9 @@ func DefaultConcurrency() int {
 	// Cap concurrency on powerful machines
 	// to leave some capacity for module ops
 	// and other application
-	if cpu >= 4 {
+	/* if cpu >= 4 {
 		return cpu / 2
-	}
+	} */
 	return cpu
 }
 
